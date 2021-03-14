@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:9999/api
+
+###
+
+GET {{baseUrl}}/pages
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/pages/1
+Content-Type: application/json
+
+###
+
+POST {{baseUrl}}/pages
+Content-Type: application/json
+
+{
+  "title": "test",
+  "imageUri": "https://...",
+  "text": "very long text ..."
+}
+
+###
+
+PUT {{baseUrl}}/pages/1
+Content-Type: application/json
+
+{
+  "title": "test updated",
+  "imageUri": "https://...",
+  "text": "updated very long text ..."
+}
+
+###
+
+DELETE {{baseUrl}}/pages/1
+Content-Type: application/json
